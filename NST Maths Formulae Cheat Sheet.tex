@@ -19,222 +19,222 @@
 \MyAuthor
 
 \begin{enumerate}
-	\item Parallel and perpendicular components of a vector:\\
-		$\underline{a}_\parallel=(\underline{a}\cdot\underline{\hat{n}})\underline{\hat{n}}$\\
-		$\underline{a}_\perp=\underline{a}-(\underline{a}\cdot\underline{\hat{n}})\underline{\hat{n}}$
-	\item Vector triple product:\\
-		$[\underline{a},\underline{b},\underline{c}]=\underline{a}\cdot(\underline{b}\times\underline{c})$\\
-		$[\underline{a},\underline{b},\underline{c}]=[\underline{b},\underline{c},\underline{a}]=[\underline{c},\underline{a},\underline{b}]$\\
-		$[\underline{a},\underline{b},\underline{c}]=-[\underline{a},\underline{c},\underline{b}]$
-	\item $\underline{a}\times(\underline{b}\times\underline{c})=(\underline{a}\cdot\underline{c})\underline{b}-(\underline{a}\cdot\underline{b})\underline{c}$
-	\item Plane equation:\\
-		$\underline{r}\cdot\underline{\hat{n}}=\underline{a}\cdot\underline{\hat{n}}=d$\\
-		$|$$d$$|$ is perpendicular distance of plane from origin for unit normal $\underline{\hat{n}}$
-	\item Polar coordinates:\\
-		$\underline{\hat{r}}=\cos\phi\underline{i}+\sin\phi\underline{j}$\\
-		$\underline{\hat{\phi}}=-\sin\phi\underline{i}+\cos\phi\underline{j}$\\
-		$dS=rdrd\phi$
-	\item Cylindrical coordinates:\\
-		$x=r\cos\phi$\\
-		$y=r\sin\phi$\\
-		$z=z$\\
-		$dV=rdrd\phi dz$
-	\item Spherical coordinates:\\
-		$x=r\sin\theta\cos\phi$\\
-		$y=r\sin\theta\sin\phi$\\
-		$z=r\cos\theta$\smallbreak
-		$\underline{\hat{r}}=\sin\theta\cos\phi\underline{i}+\sin\theta\sin\phi\underline{j}+\cos\theta\underline{k}$\\
-		$\underline{\hat{\theta}}=\cos\theta\cos\phi\underline{i}+\cos\theta\sin\phi\underline{j}-\sin\theta\underline{k}$\\
-		$\underline{\hat{\phi}}=-\sin\phi\underline{i}+\cos\phi\underline{j}$\smallbreak
-		$dV=r^2\sin\theta dr d\theta d\phi$\\
-		$dS=r^2\sin\theta d\theta d\phi$
-	\item Leibnitz's formula:\smallbreak
-		$\dfrac{d^n(fg)}{dx^n}=\displaystyle\sum_{i=0}^{n}\binom{n}{i}f^{(n-i)}g^{(i)}$
-	\item Limits: \smallbreak
-		$\displaystyle\lim_{x\to a}f(x)=K$ means that
-		$\forall\epsilon>0.\exists\delta>0.\;(0<$ $|$$x-a$$|$ $<\delta)\implies($ $|$$f(x)-K$$|$ $<\epsilon)$\smallbreak
-		$\displaystyle\lim_{x\to a+}f(x)=K$ means that
-		$\forall\epsilon>0.\exists\delta>0.\;(0<x-a<\delta)\implies($ $|$$f(x)-K$$|$ $<\epsilon)$\smallbreak
-		$\displaystyle\lim_{x\to a-}f(x)=K$ means that
-		$\forall\epsilon>0.\exists\delta>0.\;(0<a-x<\delta)\implies($ $|$$f(x)-K$$|$ $<\epsilon)$\smallbreak
-		$\displaystyle\lim_{x\to\infty}f(x)=K$ means that
-		$\forall\epsilon>0.\exists X>0.\;(x>X)\implies($ $|$$f(x)-K$$|$ $<\epsilon)$
-	\item Continuity: $f(x)$ is continuous at $a$ if:
-		\begin{enumerate}[1)]
-			\item $f(a)$ exists;
-			\item $\displaystyle\lim_{x\to a}f(x)$ exists and equals $f(a)$
-		\end{enumerate}
-	\newpage
-	\item Taylor's series:\smallbreak
-		$e^x=1+x+\dfrac{x^2}{2!}+\cdots+\dfrac{x^n}{n!}+\cdots$\smallbreak
-		$\ln(1+x)=x-\dfrac{x^2}{2}+\dfrac{x^3}{3}-\cdots+(-1)^{n+1}\dfrac{x^n}{n}+\cdots$\smallbreak
-		$\sin x=x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\cdots+(-1)^n\dfrac{x^{2n+1}}{(2n+1)!}+\cdots$\smallbreak
-		$\cos x=1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\cdots+(-1)^n\dfrac{x^{2n}}{(2n)!}+\cdots$\smallbreak
-		$\tan^{-1}x=x-\dfrac{x^3}{3}+\dfrac{x^5}{5}-\cdots+(-1)^n\dfrac{x^{2n+1}}{2n+1}+\cdots$\smallbreak
-		$\sinh x=x+\dfrac{x^3}{3!}+\dfrac{x^5}{5!}+\cdots+\dfrac{x^{2n+1}}{(2n+1)!}+\cdots$\smallbreak
-		$\cosh x=1+\dfrac{x^2}{2!}+\dfrac{x^4}{4!}+\cdots+\dfrac{x^{2n}}{(2n)!}+\cdots$\smallbreak
-		$\tanh^{-1}x=x+\dfrac{x^3}{3}+\dfrac{x^5}{5}+\cdots+\dfrac{x^{2n+1}}{2n+1}+\cdots$
-	\item Hyperbolic functions:\smallbreak
-		$\cosh^2 x-\sinh^2 x=1$\smallbreak
-		$\cosh2x=\cosh^2 x+\sinh^2 x$\smallbreak
-		$\cosh^{-1}x=\ln(x+\sqrt{x^2-1})$\smallbreak
-		$\sinh^{-1}x=\ln(x+\sqrt{x^2+1})$\smallbreak
-		$\tanh^{-1}x=\dfrac{1}{2}\ln\left(\dfrac{1+x}{1-x}\right)$
-	\item Differentiation of integrals wrt parameters:\smallbreak
-		$\dfrac{d}{dt}\displaystyle\int_{a(t)}^{b(t)}f(x,t)dx=\displaystyle\int_{a(t)}^{b(t)}\dfrac{\partial f}{\partial t}dx+\dfrac{db}{dt}f(b,t)-\dfrac{da}{dt}f(a,t)$
-	\item Schwarz's inequality:\smallbreak
-		$\left(\displaystyle\int_a^b f(x)g(x)dx\right)^2\leq\left(\displaystyle\int_a^b f^2(x)dx\right)\left(\displaystyle\int_a^b g^2(x)dx\right)$
-	\item Gaussian integral:\smallbreak
-		$\displaystyle\int_{-\infty}^{+\infty}e^{-x^2}dx=\sqrt{\pi}$
-	\item Bayes' theorem:\\
-		$P(A|B)=\dfrac{P(B|A)P(A)}{P(B)}$
-	\item Poisson distribution:\\
-		$P(X=r)=e^{-\lambda}\dfrac{\lambda^r}{r!}$\\
-		mean = variance = $\lambda$
-	\item Lifetime distribution:\\
-		$f(t)=\lambda e^{-\lambda t}$\\
-		mean = $\frac{1}{\lambda}$, variance = $\frac{1}{\lambda^2}$\\
-	\item Gaussian (normal) distribution:\\
-		$f(x)=\dfrac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$\\
-		mean = $\mu$, variance = $\sigma^2$
-	\item Linear 1st-order ODE:\smallbreak
-		$\dfrac{dy}{dx}+p(x)y=f(x)$:\smallbreak
-		$y=\dfrac{1}{\mu(x)}\displaystyle\int\mu(x)f(x)dx$, where $\mu(x)=e^{\int p(x)dx}$
-	\item Linear 2nd-order ODE (constant coefficients):\smallbreak
-		$\dfrac{d^2y}{dx^2}+a\dfrac{dy}{dx}+by=f(x)$:\smallbreak
-		Complementary function: consider the auxiliary equation $\lambda^2+a\lambda+b=0$:
-		\begin{itemize}[label={--}, noitemsep, topsep=0pt]
-			\item Case of real, distinct roots $\lambda_1$, $\lambda_2$: $y_c=Ae^{\lambda_1x}+Be^{\lambda_2x}$
-			\item Case of equal roots $\alpha$: $y_c=(A+Bx)e^{\alpha x}$
-			\item Case of complex roots $\alpha\pm\beta i$: $y_c=e^{\alpha x}(A\sin\beta x+B\cos\beta x)$
-		\end{itemize}
-		Particular integral: 
-		\begin{itemize}[label={--}, noitemsep, topsep=0pt]
-			\item Case $f(x)$ is polynomial: try polynomial with same degree (or higher if needed)
-			\item Case $f(x)=Ce^{kx}$: try $y_p=De^{kx}$ (or $Dxe^{kx}$, or $Dx^2e^{kx}$)
-			\item Case $f(x)=C_1\sin{kx}+C_2\cos{kx}$: try $y_p=D_1\sin{kx}+D_2\cos{kx}$ (or $D_1x\sin{kx}+D_2x\cos{kx}$)
-		\end{itemize}
-	\item Partial differentiation:
-		\begin{enumerate}[1)]
-			\item Differential relations:\smallbreak
-				$df=\left(\dfrac{\partial f}{\partial x}\right)_ydx+\left(\dfrac{\partial f}{\partial y}\right)_xdy$
-			\item Chain rule:\smallbreak
-				$\left(\dfrac{\partial f}{\partial u}\right)_v=\left(\dfrac{\partial f}{\partial x}\right)_y\left(\dfrac{\partial x}{\partial u}\right)_v+\left(\dfrac{\partial f}{\partial y}\right)_x\left(\dfrac{\partial y}{\partial u}\right)_v$\\
-				$\left(\dfrac{\partial f}{\partial v}\right)_u=\left(\dfrac{\partial f}{\partial x}\right)_y\left(\dfrac{\partial x}{\partial v}\right)_u+\left(\dfrac{\partial f}{\partial y}\right)_x\left(\dfrac{\partial y}{\partial v}\right)_u$
-			\item Reciprocity:\smallbreak
-				$\left(\dfrac{\partial x}{\partial y}\right)_z\left(\dfrac{\partial y}{\partial x}\right)_z=1$
-			\item Cyclic relations:\smallbreak
-				$\left(\dfrac{\partial x}{\partial z}\right)_y\left(\dfrac{\partial y}{\partial x}\right)_z\left(\dfrac{\partial z}{\partial y}\right)_x=-1$
-			\item Exact differential:\\
-				$P(x,y)dx+Q(x,y)dy$ is an exact differential iff $\dfrac{\partial P}{\partial y}=\dfrac{\partial Q}{\partial x}$.
-			\item Taylor series:\\
-				$\begin{aligned}
-					f(x,y) &= f(x_0,y_0)\\
-						   &+ f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)\\
-						   &+ \dfrac{1}{2!}\big(f_{xx}(x_0,y_0)(x-x_0)^2+2f_{xy}(x_0,y_0)(x-x_0)(y-y_0)+f_{yy}(x_0,y_0)(y-y_0)^2\big)+\cdots
-				\end{aligned}$
-		\end{enumerate}
-	\item Stationary points of multi-variable functions:\\
-		$f$ has a stationary point if $f_x=f_y=0$:
-		\begin{itemize}[label={--}, topsep=0pt]
-			\item Local minimum: $f_{xx}f_{yy}>f_{xy}^2$ with $f_{xx}>0$ and $f_{yy}>0$;
-			\item Local maximum: $f_{xx}f_{yy}>f_{xy}^2$ with $f_{xx}<0$ and $f_{yy}<0$;
-			\item Saddle point: $f_{xx}f_{yy}<f_{xy}^2$
-		\end{itemize}
-	\item Lagrange multipliers and Lagrangian function:\\
-		To find the stationary points of $f(x,y)$ subject to the constraint $g(x,y)=0$:\\
-		define the Lagrangian function
-			\[L(x,y,\lambda)=f(x,y)-\lambda g(x,y)\]
-		and solve $L_x=L_y=L_\lambda=0$.
-	\item Gradient of a scalar field:\\
-		$\bm{\nabla}\Phi=(\Phi_x,\Phi_y,\Phi_z)$\\
-		$d\Phi=(\bm{\nabla}\Phi)\cdot d\bm{x}$
-	\item Divergence of a vector field:\smallbreak
-		div $\bm{F}=\bm{\nabla}\cdot\bm{F}=\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\cdot(F_x,F_y,F_z)=\dfrac{\partial F_x}{\partial x}+\dfrac{\partial F_y}{\partial y}+\dfrac{\partial F_z}{\partial z}$\smallbreak
-		$\bm{\nabla}\cdot(\bm{\nabla}\Phi)=\nabla^2\Phi=\dfrac{\partial^2\Phi}{\partial x^2}+\dfrac{\partial^2\Phi}{\partial y^2}+\dfrac{\partial^2\Phi}{\partial z^2}$
-	\item Curl of a vector field:\smallbreak
-		curl $\bm{F}=\bm{\nabla}\times\bm{F}=\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\times(F_x,F_y,F_z)=\left(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z},\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x},\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\right)$\\
-		$\bm{\nabla}\times(\bm{\nabla}\Phi)=\bm{0}$
-	\item Normal to a surface:\smallbreak
-		$\bm{n}=\dfrac{\bm{\nabla}\Phi}{|\bm{\nabla}\Phi|}$
-	\item Line integral of a scalar field:\smallbreak
-		$\displaystyle\int_\Gamma\Phi ds=\displaystyle\int_{s_1}^{s_2}\Phi(\bm{x}(s))ds=\displaystyle\int_{t_1}^{t_2}\Phi(\bm{x}(t))\left|\dfrac{d\bm{x}}{dt}\right|dt$
-	\item Line integral of a vector field:\smallbreak
-		$\displaystyle\int_\Gamma\bm{F}(\bm{x})\cdot d\bm{x}=\displaystyle\int_{t_1}^{t_2}\bm{F}(\bm{x}(t))\cdot\dfrac{d\bm{x}}{dt}dt$
-	\item Conservative vector fields: $\bm{F}=\bm{\nabla}\Phi$\smallbreak
-		$\displaystyle\int_\Gamma\bm{F}\cdot d\bm{x}=\displaystyle\int_\Gamma(\bm{\nabla}\Phi)\cdot d\bm{x}=\Phi(\bm{x}_1)-\Phi(\bm{x}_2)$\smallbreak
-		$\displaystyle\oint_\Gamma\bm{F}\cdot d\bm{x}=\displaystyle\oint_\Gamma(\bm{\nabla}\Phi)\cdot d\bm{x}=0$
-	\item Surface integral (flux):\smallbreak
-		$\displaystyle\int_S\bm{F}\cdot d\bm{S}=\displaystyle\int_S\bm{F}\cdot\bm{n}dS$
-	\item Gauss's theorem (divergence theorem):\smallbreak
-		$\displaystyle\int_V(\bm{\nabla}\cdot\bm{F})dV=\displaystyle\int_S\bm{F}\cdot d\bm{S}$, where $S$ is the bounding surface of $V$
-	\item Stoke's theorem (curl theorem):\smallbreak
-		$\displaystyle\int_S(\bm{\nabla}\times\bm{F})\cdot d\bm{S}=\displaystyle\int_C\bm{F}\cdot d\bm{x}$, where $C$ is the boundary of $S$ (also called $\partial S$)
-	\newpage
-	\item Decomposing matrix $\bm{M}$ as sum of a symmetric matrix $\bm{S}$ and an anti-symmetric matrix $\bm{A}$: \\
-		$\bm{S}=\frac{1}{2}(\bm{M}+\bm{M}^T)$, $\bm{A}=\frac{1}{2}(\bm{M}-\bm{M}^T)$\\
-		For an anti-symmetric matrix $\bm{A}$, $\bm{x}^T\bm{Ax}=0$ for any column vector $\bm{x}$.
-	\item Hermitian conjugation:\\
-		If $\bm{A}=(a_{ij})$, then the Hermitian conjugate is $\bm{A}^\dagger=(\bm{A}^T)^*=(\bm{A}^*)^T=(a^*_{ji})$\\
-		Hermitian matrix: $\bm{A}^\dagger=\bm{A}$
-	\item Trace: 
-		For an $n\times n$ matrix $\bm{A}$, trace($\bm{A}$)=$\displaystyle\sum_{i=1}^n a_{ii}$\\
-		The trace of the product of a symmetric and an antisymmetric matrix is 0.\\
-		trace($\bm{AB}$)=trace($\bm{BA}$).\\
-		The results can be generalised and holds for any cyclic permutation of the order of multiplication.
-	\item Minors and cofactors:\\
-		For an $n\times n$ matrix $\bm{A}=(a_{ij})$, let $\bm{M}_{ij}$ be an $(n-1)\times(n-1)$ submatrix:
-		\begin{itemize}[label={--}, topsep=0pt]
-			\item Minor of the element $a_{ij}$ of $\bm{A}$: $|\bm{M}_{ij}|$
-			\item Cofactor of $a_{ij}$: $A_{ij}=(-1)^{i+j}|\bm{M}_{ij}|$
-				\[\begin{pmatrix}
-					+ & - & + & \dots \\
-					- & + & - & \dots \\
-					+ & - & + & \dots \\
-					\vdots & \vdots & \vdots & \ddots
-				\end{pmatrix}\]
-			\item Classical adjoint: (adj$\bm{A}$)$_{ij}=A_{ji}$
-				\[\begin{pmatrix}
-					A_{11} & A_{21} & \dots  & A_{j1} & \dots  & A_{n1}\\
-					A_{12} & A_{22} & \dots  & A_{j2} & \dots  & A_{n2}\\
-					\vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
-					A_{1i} & A_{2i} & \dots  & A_{ji} & \dots  & A_{ni}\\
-					\vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
-					A_{1n} & A_{2n} & \dots  & A_{jn} & \dots  & A_{nn}\\
-				\end{pmatrix}\]
-		\end{itemize}
-	\item Determinants:\smallbreak
-		$|\bm{A}|=\displaystyle\sum_{j=1}^n a_{ij}A_{ij}$ for any fixed $i$; or\\
-		$|\bm{A}|=\displaystyle\sum_{i=1}^n a_{ij}A_{ij}$ for any fixed $j$; or\smallbreak
-		product of the elements on the diagonal if the matrix is triangular.
-		\begin{itemize}[label={--}, topsep=0pt]
-			\item $\bm{A}(\text{adj}\bm{A})=(\text{det}\bm{A})\bm{I}$
-			\item Interchanging any two rows or columns of $\bm{A}$ changes the sign of $\text{det}\bm{A}$;
-			\item $\text{det}\bm{A}=0$ if any two rows or columns are the same;
-			\item Multiplying all the elements of any one row or column of $\bm{A}$ by $\lambda$ multiplies $\text{det}\bm{A}$ by $\lambda$;
-			\item Adding a multiple of row (column) on another row (column) leaves $\text{det}\bm{A}$ unchanged;
-			\item $\text{det}\bm{AB}=(\text{det}\bm{A})(\text{det}\bm{B})$
-			\item $\text{det}\bm{A}=\text{det}\bm{A}^T$
-		\end{itemize}
-	\item Eigenvalues:
-		\begin{itemize}[label={--}, topsep=0pt]
-			\item $\text{det}\bm{A}=\displaystyle\prod_{i=1}^n \lambda_i$
-			\item trace$(\bm{A})=\displaystyle\sum_{i=1}^n \lambda_i$
-		\end{itemize}
-	\item Diagonalisation of real symmetric matrices: if $\bm{A}$ is real symmetric, then:
-		\begin{itemize}[label={--}, topsep=0pt]
-			\item $\bm{A}$ has $n$ distinct eigenvalues $\lambda_1$, $\lambda_2$, ..., $\lambda_n$;
-			\item $\bm{A}$ has $n$ linearly independent eigenvectors $\bm{e}_1$, $\bm{e}_2$, ..., $\bm{e}_n$ that form an orthonormal basis;
-			\item $\bm{A}$ can be diagonalised by setting $\bm{X}=\begin{pmatrix}
-					\bm{e}_1 & \bm{e}_2 & \dots & \bm{e}_n
-				\end{pmatrix}$, then \smallbreak
-				$\bm{A}'=\bm{X}^T\bm{AX}=
-				\begin{pmatrix}
-					\lambda_1 & 0 & \dots & 0\\
-					0 & \lambda_2 & \dots & 0\\
-					\vdots & \vdots & \ddots & \vdots\\
-					0 & 0 & \dots & \lambda_n 
-				\end{pmatrix}$
-		\end{itemize}
+    \item Parallel and perpendicular components of a vector:\\
+        $\underline{a}_\parallel=(\underline{a}\cdot\underline{\hat{n}})\underline{\hat{n}}$\\
+        $\underline{a}_\perp=\underline{a}-(\underline{a}\cdot\underline{\hat{n}})\underline{\hat{n}}$
+    \item Vector triple product:\\
+        $[\underline{a},\underline{b},\underline{c}]=\underline{a}\cdot(\underline{b}\times\underline{c})$\\
+        $[\underline{a},\underline{b},\underline{c}]=[\underline{b},\underline{c},\underline{a}]=[\underline{c},\underline{a},\underline{b}]$\\
+        $[\underline{a},\underline{b},\underline{c}]=-[\underline{a},\underline{c},\underline{b}]$
+    \item $\underline{a}\times(\underline{b}\times\underline{c})=(\underline{a}\cdot\underline{c})\underline{b}-(\underline{a}\cdot\underline{b})\underline{c}$
+    \item Plane equation:\\
+        $\underline{r}\cdot\underline{\hat{n}}=\underline{a}\cdot\underline{\hat{n}}=d$\\
+        $|$$d$$|$ is perpendicular distance of plane from origin for unit normal $\underline{\hat{n}}$
+    \item Polar coordinates:\\
+        $\underline{\hat{r}}=\cos\phi\underline{i}+\sin\phi\underline{j}$\\
+        $\underline{\hat{\phi}}=-\sin\phi\underline{i}+\cos\phi\underline{j}$\\
+        $dS=rdrd\phi$
+    \item Cylindrical coordinates:\\
+        $x=r\cos\phi$\\
+        $y=r\sin\phi$\\
+        $z=z$\\
+        $dV=rdrd\phi dz$
+    \item Spherical coordinates:\\
+        $x=r\sin\theta\cos\phi$\\
+        $y=r\sin\theta\sin\phi$\\
+        $z=r\cos\theta$\smallbreak
+        $\underline{\hat{r}}=\sin\theta\cos\phi\underline{i}+\sin\theta\sin\phi\underline{j}+\cos\theta\underline{k}$\\
+        $\underline{\hat{\theta}}=\cos\theta\cos\phi\underline{i}+\cos\theta\sin\phi\underline{j}-\sin\theta\underline{k}$\\
+        $\underline{\hat{\phi}}=-\sin\phi\underline{i}+\cos\phi\underline{j}$\smallbreak
+        $dV=r^2\sin\theta dr d\theta d\phi$\\
+        $dS=r^2\sin\theta d\theta d\phi$
+    \item Leibnitz's formula:\smallbreak
+        $\dfrac{d^n(fg)}{dx^n}=\displaystyle\sum_{i=0}^{n}\binom{n}{i}f^{(n-i)}g^{(i)}$
+    \item Limits: \smallbreak
+        $\displaystyle\lim_{x\to a}f(x)=K$ means that
+        $\forall\epsilon>0.\exists\delta>0.\;(0<$ $|$$x-a$$|$ $<\delta)\implies($ $|$$f(x)-K$$|$ $<\epsilon)$\smallbreak
+        $\displaystyle\lim_{x\to a+}f(x)=K$ means that
+        $\forall\epsilon>0.\exists\delta>0.\;(0<x-a<\delta)\implies($ $|$$f(x)-K$$|$ $<\epsilon)$\smallbreak
+        $\displaystyle\lim_{x\to a-}f(x)=K$ means that
+        $\forall\epsilon>0.\exists\delta>0.\;(0<a-x<\delta)\implies($ $|$$f(x)-K$$|$ $<\epsilon)$\smallbreak
+        $\displaystyle\lim_{x\to\infty}f(x)=K$ means that
+        $\forall\epsilon>0.\exists X>0.\;(x>X)\implies($ $|$$f(x)-K$$|$ $<\epsilon)$
+    \item Continuity: $f(x)$ is continuous at $a$ if:
+        \begin{enumerate}[1)]
+            \item $f(a)$ exists;
+            \item $\displaystyle\lim_{x\to a}f(x)$ exists and equals $f(a)$
+        \end{enumerate}
+    \newpage
+    \item Taylor's series:\smallbreak
+        $e^x=1+x+\dfrac{x^2}{2!}+\cdots+\dfrac{x^n}{n!}+\cdots$\smallbreak
+        $\ln(1+x)=x-\dfrac{x^2}{2}+\dfrac{x^3}{3}-\cdots+(-1)^{n+1}\dfrac{x^n}{n}+\cdots$\smallbreak
+        $\sin x=x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}-\cdots+(-1)^n\dfrac{x^{2n+1}}{(2n+1)!}+\cdots$\smallbreak
+        $\cos x=1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\cdots+(-1)^n\dfrac{x^{2n}}{(2n)!}+\cdots$\smallbreak
+        $\tan^{-1}x=x-\dfrac{x^3}{3}+\dfrac{x^5}{5}-\cdots+(-1)^n\dfrac{x^{2n+1}}{2n+1}+\cdots$\smallbreak
+        $\sinh x=x+\dfrac{x^3}{3!}+\dfrac{x^5}{5!}+\cdots+\dfrac{x^{2n+1}}{(2n+1)!}+\cdots$\smallbreak
+        $\cosh x=1+\dfrac{x^2}{2!}+\dfrac{x^4}{4!}+\cdots+\dfrac{x^{2n}}{(2n)!}+\cdots$\smallbreak
+        $\tanh^{-1}x=x+\dfrac{x^3}{3}+\dfrac{x^5}{5}+\cdots+\dfrac{x^{2n+1}}{2n+1}+\cdots$
+    \item Hyperbolic functions:\smallbreak
+        $\cosh^2 x-\sinh^2 x=1$\smallbreak
+        $\cosh2x=\cosh^2 x+\sinh^2 x$\smallbreak
+        $\cosh^{-1}x=\ln(x+\sqrt{x^2-1})$\smallbreak
+        $\sinh^{-1}x=\ln(x+\sqrt{x^2+1})$\smallbreak
+        $\tanh^{-1}x=\dfrac{1}{2}\ln\left(\dfrac{1+x}{1-x}\right)$
+    \item Differentiation of integrals wrt parameters:\smallbreak
+        $\dfrac{d}{dt}\displaystyle\int_{a(t)}^{b(t)}f(x,t)dx=\displaystyle\int_{a(t)}^{b(t)}\dfrac{\partial f}{\partial t}dx+\dfrac{db}{dt}f(b,t)-\dfrac{da}{dt}f(a,t)$
+    \item Schwarz's inequality:\smallbreak
+        $\left(\displaystyle\int_a^b f(x)g(x)dx\right)^2\leq\left(\displaystyle\int_a^b f^2(x)dx\right)\left(\displaystyle\int_a^b g^2(x)dx\right)$
+    \item Gaussian integral:\smallbreak
+        $\displaystyle\int_{-\infty}^{+\infty}e^{-x^2}dx=\sqrt{\pi}$
+    \item Bayes' theorem:\\
+        $P(A|B)=\dfrac{P(B|A)P(A)}{P(B)}$
+    \item Poisson distribution:\\
+        $P(X=r)=e^{-\lambda}\dfrac{\lambda^r}{r!}$\\
+        mean = variance = $\lambda$
+    \item Lifetime distribution:\\
+        $f(t)=\lambda e^{-\lambda t}$\\
+        mean = $\frac{1}{\lambda}$, variance = $\frac{1}{\lambda^2}$\\
+    \item Gaussian (normal) distribution:\\
+        $f(x)=\dfrac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$\\
+        mean = $\mu$, variance = $\sigma^2$
+    \item Linear 1st-order ODE:\smallbreak
+        $\dfrac{dy}{dx}+p(x)y=f(x)$:\smallbreak
+        $y=\dfrac{1}{\mu(x)}\displaystyle\int\mu(x)f(x)dx$, where $\mu(x)=e^{\int p(x)dx}$
+    \item Linear 2nd-order ODE (constant coefficients):\smallbreak
+        $\dfrac{d^2y}{dx^2}+a\dfrac{dy}{dx}+by=f(x)$:\smallbreak
+        Complementary function: consider the auxiliary equation $\lambda^2+a\lambda+b=0$:
+        \begin{itemize}[label={--}, noitemsep, topsep=0pt]
+            \item Case of real, distinct roots $\lambda_1$, $\lambda_2$: $y_c=Ae^{\lambda_1x}+Be^{\lambda_2x}$
+            \item Case of equal roots $\alpha$: $y_c=(A+Bx)e^{\alpha x}$
+            \item Case of complex roots $\alpha\pm\beta i$: $y_c=e^{\alpha x}(A\sin\beta x+B\cos\beta x)$
+        \end{itemize}
+        Particular integral: 
+        \begin{itemize}[label={--}, noitemsep, topsep=0pt]
+            \item Case $f(x)$ is polynomial: try polynomial with same degree (or higher if needed)
+            \item Case $f(x)=Ce^{kx}$: try $y_p=De^{kx}$ (or $Dxe^{kx}$, or $Dx^2e^{kx}$)
+            \item Case $f(x)=C_1\sin{kx}+C_2\cos{kx}$: try $y_p=D_1\sin{kx}+D_2\cos{kx}$ (or $D_1x\sin{kx}+D_2x\cos{kx}$)
+        \end{itemize}
+    \item Partial differentiation:
+        \begin{enumerate}[1)]
+            \item Differential relations:\smallbreak
+                $df=\left(\dfrac{\partial f}{\partial x}\right)_ydx+\left(\dfrac{\partial f}{\partial y}\right)_xdy$
+            \item Chain rule:\smallbreak
+                $\left(\dfrac{\partial f}{\partial u}\right)_v=\left(\dfrac{\partial f}{\partial x}\right)_y\left(\dfrac{\partial x}{\partial u}\right)_v+\left(\dfrac{\partial f}{\partial y}\right)_x\left(\dfrac{\partial y}{\partial u}\right)_v$\\
+                $\left(\dfrac{\partial f}{\partial v}\right)_u=\left(\dfrac{\partial f}{\partial x}\right)_y\left(\dfrac{\partial x}{\partial v}\right)_u+\left(\dfrac{\partial f}{\partial y}\right)_x\left(\dfrac{\partial y}{\partial v}\right)_u$
+            \item Reciprocity:\smallbreak
+                $\left(\dfrac{\partial x}{\partial y}\right)_z\left(\dfrac{\partial y}{\partial x}\right)_z=1$
+            \item Cyclic relations:\smallbreak
+                $\left(\dfrac{\partial x}{\partial z}\right)_y\left(\dfrac{\partial y}{\partial x}\right)_z\left(\dfrac{\partial z}{\partial y}\right)_x=-1$
+            \item Exact differential:\\
+                $P(x,y)dx+Q(x,y)dy$ is an exact differential iff $\dfrac{\partial P}{\partial y}=\dfrac{\partial Q}{\partial x}$.
+            \item Taylor series:\\
+                $\begin{aligned}
+                    f(x,y) &= f(x_0,y_0)\\
+                           &+ f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)\\
+                           &+ \dfrac{1}{2!}\big(f_{xx}(x_0,y_0)(x-x_0)^2+2f_{xy}(x_0,y_0)(x-x_0)(y-y_0)+f_{yy}(x_0,y_0)(y-y_0)^2\big)+\cdots
+                \end{aligned}$
+        \end{enumerate}
+    \item Stationary points of multi-variable functions:\\
+        $f$ has a stationary point if $f_x=f_y=0$:
+        \begin{itemize}[label={--}, topsep=0pt]
+            \item Local minimum: $f_{xx}f_{yy}>f_{xy}^2$ with $f_{xx}>0$ and $f_{yy}>0$;
+            \item Local maximum: $f_{xx}f_{yy}>f_{xy}^2$ with $f_{xx}<0$ and $f_{yy}<0$;
+            \item Saddle point: $f_{xx}f_{yy}<f_{xy}^2$
+        \end{itemize}
+    \item Lagrange multipliers and Lagrangian function:\\
+        To find the stationary points of $f(x,y)$ subject to the constraint $g(x,y)=0$:\\
+        define the Lagrangian function
+            \[L(x,y,\lambda)=f(x,y)-\lambda g(x,y)\]
+        and solve $L_x=L_y=L_\lambda=0$.
+    \item Gradient of a scalar field:\\
+        $\bm{\nabla}\Phi=(\Phi_x,\Phi_y,\Phi_z)$\\
+        $d\Phi=(\bm{\nabla}\Phi)\cdot d\bm{x}$
+    \item Divergence of a vector field:\smallbreak
+        div $\bm{F}=\bm{\nabla}\cdot\bm{F}=\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\cdot(F_x,F_y,F_z)=\dfrac{\partial F_x}{\partial x}+\dfrac{\partial F_y}{\partial y}+\dfrac{\partial F_z}{\partial z}$\smallbreak
+        $\bm{\nabla}\cdot(\bm{\nabla}\Phi)=\nabla^2\Phi=\dfrac{\partial^2\Phi}{\partial x^2}+\dfrac{\partial^2\Phi}{\partial y^2}+\dfrac{\partial^2\Phi}{\partial z^2}$
+    \item Curl of a vector field:\smallbreak
+        curl $\bm{F}=\bm{\nabla}\times\bm{F}=\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\times(F_x,F_y,F_z)=\left(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z},\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x},\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\right)$\\
+        $\bm{\nabla}\times(\bm{\nabla}\Phi)=\bm{0}$
+    \item Normal to a surface:\smallbreak
+        $\bm{n}=\dfrac{\bm{\nabla}\Phi}{|\bm{\nabla}\Phi|}$
+    \item Line integral of a scalar field:\smallbreak
+        $\displaystyle\int_\Gamma\Phi ds=\displaystyle\int_{s_1}^{s_2}\Phi(\bm{x}(s))ds=\displaystyle\int_{t_1}^{t_2}\Phi(\bm{x}(t))\left|\dfrac{d\bm{x}}{dt}\right|dt$
+    \item Line integral of a vector field:\smallbreak
+        $\displaystyle\int_\Gamma\bm{F}(\bm{x})\cdot d\bm{x}=\displaystyle\int_{t_1}^{t_2}\bm{F}(\bm{x}(t))\cdot\dfrac{d\bm{x}}{dt}dt$
+    \item Conservative vector fields: $\bm{F}=\bm{\nabla}\Phi$\smallbreak
+        $\displaystyle\int_\Gamma\bm{F}\cdot d\bm{x}=\displaystyle\int_\Gamma(\bm{\nabla}\Phi)\cdot d\bm{x}=\Phi(\bm{x}_1)-\Phi(\bm{x}_2)$\smallbreak
+        $\displaystyle\oint_\Gamma\bm{F}\cdot d\bm{x}=\displaystyle\oint_\Gamma(\bm{\nabla}\Phi)\cdot d\bm{x}=0$
+    \item Surface integral (flux):\smallbreak
+        $\displaystyle\int_S\bm{F}\cdot d\bm{S}=\displaystyle\int_S\bm{F}\cdot\bm{n}dS$
+    \item Gauss's theorem (divergence theorem):\smallbreak
+        $\displaystyle\int_V(\bm{\nabla}\cdot\bm{F})dV=\displaystyle\int_S\bm{F}\cdot d\bm{S}$, where $S$ is the bounding surface of $V$
+    \item Stoke's theorem (curl theorem):\smallbreak
+        $\displaystyle\int_S(\bm{\nabla}\times\bm{F})\cdot d\bm{S}=\displaystyle\int_C\bm{F}\cdot d\bm{x}$, where $C$ is the boundary of $S$ (also called $\partial S$)
+    \newpage
+    \item Decomposing matrix $\bm{M}$ as sum of a symmetric matrix $\bm{S}$ and an anti-symmetric matrix $\bm{A}$: \\
+        $\bm{S}=\frac{1}{2}(\bm{M}+\bm{M}^T)$, $\bm{A}=\frac{1}{2}(\bm{M}-\bm{M}^T)$\\
+        For an anti-symmetric matrix $\bm{A}$, $\bm{x}^T\bm{Ax}=0$ for any column vector $\bm{x}$.
+    \item Hermitian conjugation:\\
+        If $\bm{A}=(a_{ij})$, then the Hermitian conjugate is $\bm{A}^\dagger=(\bm{A}^T)^*=(\bm{A}^*)^T=(a^*_{ji})$\\
+        Hermitian matrix: $\bm{A}^\dagger=\bm{A}$
+    \item Trace: 
+        For an $n\times n$ matrix $\bm{A}$, trace($\bm{A}$)=$\displaystyle\sum_{i=1}^n a_{ii}$\\
+        The trace of the product of a symmetric and an antisymmetric matrix is 0.\\
+        trace($\bm{AB}$)=trace($\bm{BA}$).\\
+        The results can be generalised and holds for any cyclic permutation of the order of multiplication.
+    \item Minors and cofactors:\\
+        For an $n\times n$ matrix $\bm{A}=(a_{ij})$, let $\bm{M}_{ij}$ be an $(n-1)\times(n-1)$ submatrix:
+        \begin{itemize}[label={--}, topsep=0pt]
+            \item Minor of the element $a_{ij}$ of $\bm{A}$: $|\bm{M}_{ij}|$
+            \item Cofactor of $a_{ij}$: $A_{ij}=(-1)^{i+j}|\bm{M}_{ij}|$
+                \[\begin{pmatrix}
+                    + & - & + & \dots \\
+                    - & + & - & \dots \\
+                    + & - & + & \dots \\
+                    \vdots & \vdots & \vdots & \ddots
+                \end{pmatrix}\]
+            \item Classical adjoint: (adj$\bm{A}$)$_{ij}=A_{ji}$
+                \[\begin{pmatrix}
+                    A_{11} & A_{21} & \dots  & A_{j1} & \dots  & A_{n1}\\
+                    A_{12} & A_{22} & \dots  & A_{j2} & \dots  & A_{n2}\\
+                    \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+                    A_{1i} & A_{2i} & \dots  & A_{ji} & \dots  & A_{ni}\\
+                    \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+                    A_{1n} & A_{2n} & \dots  & A_{jn} & \dots  & A_{nn}\\
+                \end{pmatrix}\]
+        \end{itemize}
+    \item Determinants:\smallbreak
+        $|\bm{A}|=\displaystyle\sum_{j=1}^n a_{ij}A_{ij}$ for any fixed $i$; or\\
+        $|\bm{A}|=\displaystyle\sum_{i=1}^n a_{ij}A_{ij}$ for any fixed $j$; or\smallbreak
+        product of the elements on the diagonal if the matrix is triangular.
+        \begin{itemize}[label={--}, topsep=0pt]
+            \item $\bm{A}(\text{adj}\bm{A})=(\text{det}\bm{A})\bm{I}$
+            \item Interchanging any two rows or columns of $\bm{A}$ changes the sign of $\text{det}\bm{A}$;
+            \item $\text{det}\bm{A}=0$ if any two rows or columns are the same;
+            \item Multiplying all the elements of any one row or column of $\bm{A}$ by $\lambda$ multiplies $\text{det}\bm{A}$ by $\lambda$;
+            \item Adding a multiple of row (column) on another row (column) leaves $\text{det}\bm{A}$ unchanged;
+            \item $\text{det}\bm{AB}=(\text{det}\bm{A})(\text{det}\bm{B})$
+            \item $\text{det}\bm{A}=\text{det}\bm{A}^T$
+        \end{itemize}
+    \item Eigenvalues:
+        \begin{itemize}[label={--}, topsep=0pt]
+            \item $\text{det}\bm{A}=\displaystyle\prod_{i=1}^n \lambda_i$
+            \item trace$(\bm{A})=\displaystyle\sum_{i=1}^n \lambda_i$
+        \end{itemize}
+    \item Diagonalisation of real symmetric matrices: if $\bm{A}$ is real symmetric, then:
+        \begin{itemize}[label={--}, topsep=0pt]
+            \item $\bm{A}$ has $n$ distinct eigenvalues $\lambda_1$, $\lambda_2$, ..., $\lambda_n$;
+            \item $\bm{A}$ has $n$ linearly independent eigenvectors $\bm{e}_1$, $\bm{e}_2$, ..., $\bm{e}_n$ that form an orthonormal basis;
+            \item $\bm{A}$ can be diagonalised by setting $\bm{X}=\begin{pmatrix}
+                    \bm{e}_1 & \bm{e}_2 & \dots & \bm{e}_n
+                \end{pmatrix}$, then \smallbreak
+                $\bm{A}'=\bm{X}^T\bm{AX}=
+                \begin{pmatrix}
+                    \lambda_1 & 0 & \dots & 0\\
+                    0 & \lambda_2 & \dots & 0\\
+                    \vdots & \vdots & \ddots & \vdots\\
+                    0 & 0 & \dots & \lambda_n 
+                \end{pmatrix}$
+        \end{itemize}
 \end{enumerate}
 \end{document}
