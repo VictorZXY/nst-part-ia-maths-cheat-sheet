@@ -22,19 +22,19 @@
 
 \begin{enumerate}
     \item Parallel and perpendicular components of a vector:\\
-        $\mathbf{a}_\parallel=(\mathbf{a}\cdot\mathbf{\hat{n}})\mathbf{\hat{n}}$\\
-        $\mathbf{a}_\perp=\mathbf{a}-(\mathbf{a}\cdot\mathbf{\hat{n}})\mathbf{\hat{n}}$
+        $\mathbf{a}_\parallel=(\mathbf{a}\cdot\hat{\mathbf{n}})\hat{\mathbf{n}}$\\
+        $\mathbf{a}_\perp=\mathbf{a}-(\mathbf{a}\cdot\hat{\mathbf{n}})\hat{\mathbf{n}}$
     \item Vector triple product:\\
         $[\mathbf{a},\mathbf{b},\mathbf{c}]=\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})$\\
         $[\mathbf{a},\mathbf{b},\mathbf{c}]=[\mathbf{b},\mathbf{c},\mathbf{a}]=[\mathbf{c},\mathbf{a},\mathbf{b}]$\\
         $[\mathbf{a},\mathbf{b},\mathbf{c}]=-[\mathbf{a},\mathbf{c},\mathbf{b}]$
     \item $\mathbf{a}\times(\mathbf{b}\times\mathbf{c})=(\mathbf{a}\cdot\mathbf{c})\mathbf{b}-(\mathbf{a}\cdot\mathbf{b})\mathbf{c}$
     \item Plane equation:\\
-        $\mathbf{r}\cdot\mathbf{\hat{n}}=\mathbf{a}\cdot\mathbf{\hat{n}}=d$\\
-        $|$$d$$|$ is perpendicular distance of plane from origin for unit normal $\mathbf{\hat{n}}$
+        $\mathbf{r}\cdot\hat{\mathbf{n}}=\mathbf{a}\cdot\hat{\mathbf{n}}=d$\\
+        $|$$d$$|$ is perpendicular distance of plane from origin for unit normal $\hat{\mathbf{n}}$
     \item Polar coordinates:\\
-        $\mathbf{\hat{r}}=\cos\phi\mathbf{i}+\sin\phi\mathbf{j}$\\
-        $\mathbf{\hat{\phi}}=-\sin\phi\mathbf{i}+\cos\phi\mathbf{j}$\\
+        $\hat{\mathbf{r}}=\cos\phi\mathbf{i}+\sin\phi\mathbf{j}$\\
+        $\hat{\bm{\phi}}=-\sin\phi\mathbf{i}+\cos\phi\mathbf{j}$\\
         $dS=rdrd\phi$
     \item Cylindrical coordinates:\\
         $x=r\cos\phi$\\
@@ -45,9 +45,9 @@
         $x=r\sin\theta\cos\phi$\\
         $y=r\sin\theta\sin\phi$\\
         $z=r\cos\theta$\smallbreak
-        $\mathbf{\hat{r}}=\sin\theta\cos\phi\mathbf{i}+\sin\theta\sin\phi\mathbf{j}+\cos\theta\mathbf{k}$\\
-        $\mathbf{\hat{\theta}}=\cos\theta\cos\phi\mathbf{i}+\cos\theta\sin\phi\mathbf{j}-\sin\theta\mathbf{k}$\\
-        $\mathbf{\hat{\phi}}=-\sin\phi\mathbf{i}+\cos\phi\mathbf{j}$\smallbreak
+        $\hat{\mathbf{r}}=\sin\theta\cos\phi\mathbf{i}+\sin\theta\sin\phi\mathbf{j}+\cos\theta\mathbf{k}$\\
+        $\hat{\bm{\theta}}=\cos\theta\cos\phi\mathbf{i}+\cos\theta\sin\phi\mathbf{j}-\sin\theta\mathbf{k}$\\
+        $\hat{\bm{\phi}}=-\sin\phi\mathbf{i}+\cos\phi\mathbf{j}$\smallbreak
         $dV=r^2\sin\theta dr d\theta d\phi$\\
         $dS=r^2\sin\theta d\theta d\phi$
     \item Leibnitz's formula:\smallbreak
@@ -148,29 +148,29 @@
             \[L(x,y,\lambda)=f(x,y)-\lambda g(x,y)\]
         and solve $L_x=L_y=L_\lambda=0$.
     \item Gradient of a scalar field:\\
-        $\mathbf{\nabla}\Phi=(\Phi_x,\Phi_y,\Phi_z)$\\
-        $d\Phi=(\mathbf{\nabla}\Phi)\cdot d\mathbf{x}$
+        $\bm{\nabla}\Phi=(\Phi_x,\Phi_y,\Phi_z)$\\
+        $d\Phi=(\bm{\nabla}\Phi)\cdot d\mathbf{x}$
     \item Divergence of a vector field:\smallbreak
-        div $\mathbf{F}=\mathbf{\nabla}\cdot\mathbf{F}=\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\cdot(F_x,F_y,F_z)=\dfrac{\partial F_x}{\partial x}+\dfrac{\partial F_y}{\partial y}+\dfrac{\partial F_z}{\partial z}$\smallbreak
-        $\mathbf{\nabla}\cdot(\mathbf{\nabla}\Phi)=\nabla^2\Phi=\dfrac{\partial^2\Phi}{\partial x^2}+\dfrac{\partial^2\Phi}{\partial y^2}+\dfrac{\partial^2\Phi}{\partial z^2}$
+        div $\mathbf{F}=\bm{\nabla}\cdot\mathbf{F}=\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\cdot(F_x,F_y,F_z)=\dfrac{\partial F_x}{\partial x}+\dfrac{\partial F_y}{\partial y}+\dfrac{\partial F_z}{\partial z}$\smallbreak
+        $\bm{\nabla}\cdot(\bm{\nabla}\Phi)=\nabla^2\Phi=\dfrac{\partial^2\Phi}{\partial x^2}+\dfrac{\partial^2\Phi}{\partial y^2}+\dfrac{\partial^2\Phi}{\partial z^2}$
     \item Curl of a vector field:\smallbreak
-        curl $\mathbf{F}=\mathbf{\nabla}\times\mathbf{F}=\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\times(F_x,F_y,F_z)=\left(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z},\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x},\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\right)$\\
-        $\mathbf{\nabla}\times(\mathbf{\nabla}\Phi)=\mathbf{0}$
+        curl $\mathbf{F}=\bm{\nabla}\times\mathbf{F}=\left(\dfrac{\partial}{\partial x},\dfrac{\partial}{\partial y},\dfrac{\partial}{\partial z}\right)\times(F_x,F_y,F_z)=\left(\dfrac{\partial F_z}{\partial y}-\dfrac{\partial F_y}{\partial z},\dfrac{\partial F_x}{\partial z}-\dfrac{\partial F_z}{\partial x},\dfrac{\partial F_y}{\partial x}-\dfrac{\partial F_x}{\partial y}\right)$\\
+        $\bm{\nabla}\times(\bm{\nabla}\Phi)=\mathbf{0}$
     \item Normal to a surface:\smallbreak
-        $\mathbf{n}=\dfrac{\mathbf{\nabla}\Phi}{|\mathbf{\nabla}\Phi|}$
+        $\mathbf{n}=\dfrac{\bm{\nabla}\Phi}{|\bm{\nabla}\Phi|}$
     \item Line integral of a scalar field:\smallbreak
         $\displaystyle\int_\Gamma\Phi ds=\displaystyle\int_{s_1}^{s_2}\Phi(\mathbf{x}(s))ds=\displaystyle\int_{t_1}^{t_2}\Phi(\mathbf{x}(t))\left|\dfrac{d\mathbf{x}}{dt}\right|dt$
     \item Line integral of a vector field:\smallbreak
         $\displaystyle\int_\Gamma\mathbf{F}(\mathbf{x})\cdot d\mathbf{x}=\displaystyle\int_{t_1}^{t_2}\mathbf{F}(\mathbf{x}(t))\cdot\dfrac{d\mathbf{x}}{dt}dt$
-    \item Conservative vector fields: $\mathbf{F}=\mathbf{\nabla}\Phi$\smallbreak
-        $\displaystyle\int_\Gamma\mathbf{F}\cdot d\mathbf{x}=\displaystyle\int_\Gamma(\mathbf{\nabla}\Phi)\cdot d\mathbf{x}=\Phi(\mathbf{x}_1)-\Phi(\mathbf{x}_2)$\smallbreak
-        $\displaystyle\oint_\Gamma\mathbf{F}\cdot d\mathbf{x}=\displaystyle\oint_\Gamma(\mathbf{\nabla}\Phi)\cdot d\mathbf{x}=0$
+    \item Conservative vector fields: $\mathbf{F}=\bm{\nabla}\Phi$\smallbreak
+        $\displaystyle\int_\Gamma\mathbf{F}\cdot d\mathbf{x}=\displaystyle\int_\Gamma(\bm{\nabla}\Phi)\cdot d\mathbf{x}=\Phi(\mathbf{x}_1)-\Phi(\mathbf{x}_2)$\smallbreak
+        $\displaystyle\oint_\Gamma\mathbf{F}\cdot d\mathbf{x}=\displaystyle\oint_\Gamma(\bm{\nabla}\Phi)\cdot d\mathbf{x}=0$
     \item Surface integral (flux):\smallbreak
         $\displaystyle\int_S\mathbf{F}\cdot d\mathbf{S}=\displaystyle\int_S\mathbf{F}\cdot\mathbf{n}dS$
     \item Gauss's theorem (divergence theorem):\smallbreak
-        $\displaystyle\int_V(\mathbf{\nabla}\cdot\mathbf{F})dV=\displaystyle\int_S\mathbf{F}\cdot d\mathbf{S}$, where $S$ is the bounding surface of $V$
+        $\displaystyle\int_V(\bm{\nabla}\cdot\mathbf{F})dV=\displaystyle\int_S\mathbf{F}\cdot d\mathbf{S}$, where $S$ is the bounding surface of $V$
     \item Stoke's theorem (curl theorem):\smallbreak
-        $\displaystyle\int_S(\mathbf{\nabla}\times\mathbf{F})\cdot d\mathbf{S}=\displaystyle\int_C\mathbf{F}\cdot d\mathbf{x}$, where $C$ is the boundary of $S$ (also called $\partial S$)
+        $\displaystyle\int_S(\bm{\nabla}\times\mathbf{F})\cdot d\mathbf{S}=\displaystyle\int_C\mathbf{F}\cdot d\mathbf{x}$, where $C$ is the boundary of $S$ (also called $\partial S$)
     \newpage
     \item Decomposing matrix $\mathbf{M}$ as sum of a symmetric matrix $\mathbf{S}$ and an anti-symmetric matrix $\mathbf{A}$: \\
         $\mathbf{S}=\frac{1}{2}(\mathbf{M}+\mathbf{M}^T)$, $\mathbf{A}=\frac{1}{2}(\mathbf{M}-\mathbf{M}^T)$\\
