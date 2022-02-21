@@ -9,7 +9,7 @@
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{newpxtext}
-\usepackage{newpxmath}
+%\usepackage{newpxmath}
 \usepackage{textcomp}
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 
@@ -121,7 +121,7 @@
             \item Differential relations:\smallbreak
                 $df=\left(\dfrac{\partial f}{\partial x}\right)_ydx+\left(\dfrac{\partial f}{\partial y}\right)_xdy$
             \item Chain rule:\smallbreak
-                $\left(\dfrac{\partial f}{\partial u}\right)_v=\left(\dfrac{\partial f}{\partial x}\right)_y\left(\dfrac{\partial x}{\partial u}\right)_v+\left(\dfrac{\partial f}{\partial y}\right)_x\left(\dfrac{\partial y}{\partial u}\right)_v$\\
+                $\left(\dfrac{\partial f}{\partial u}\right)_v=\left(\dfrac{\partial f}{\partial x}\right)_y\left(\dfrac{\partial x}{\partial u}\right)_v+\left(\dfrac{\partial f}{\partial y}\right)_x\left(\dfrac{\partial y}{\partial u}\right)_v$\smallbreak
                 $\left(\dfrac{\partial f}{\partial v}\right)_u=\left(\dfrac{\partial f}{\partial x}\right)_y\left(\dfrac{\partial x}{\partial v}\right)_u+\left(\dfrac{\partial f}{\partial y}\right)_x\left(\dfrac{\partial y}{\partial v}\right)_u$
             \item Reciprocity:\smallbreak
                 $\left(\dfrac{\partial x}{\partial y}\right)_z\left(\dfrac{\partial y}{\partial x}\right)_z=1$
@@ -173,10 +173,10 @@
         $\displaystyle\int_S(\bm{\nabla}\times\mathbf{F})\cdot d\mathbf{S}=\displaystyle\int_C\mathbf{F}\cdot d\mathbf{x}$, where $C$ is the boundary of $S$ (also called $\partial S$)
     \newpage
     \item Decomposing matrix $\mathbf{M}$ as sum of a symmetric matrix $\mathbf{S}$ and an anti-symmetric matrix $\mathbf{A}$: \\
-        $\mathbf{S}=\frac{1}{2}(\mathbf{M}+\mathbf{M}^T)$, $\mathbf{A}=\frac{1}{2}(\mathbf{M}-\mathbf{M}^T)$\\
-        For an anti-symmetric matrix $\mathbf{A}$, $\mathbf{x}^T\mathbf{Ax}=0$ for any column vector $\mathbf{x}$.
+        $\mathbf{S}=\frac{1}{2}(\mathbf{M}+\mathbf{M}^\top)$, $\mathbf{A}=\frac{1}{2}(\mathbf{M}-\mathbf{M}^\top)$\\
+        For an anti-symmetric matrix $\mathbf{A}$, $\mathbf{x}^\top\mathbf{Ax}=0$ for any column vector $\mathbf{x}$.
     \item Hermitian conjugation:\\
-        If $\mathbf{A}=(a_{ij})$, then the Hermitian conjugate is $\mathbf{A}^\dagger=(\mathbf{A}^T)^*=(\mathbf{A}^*)^T=(a^*_{ji})$\\
+        If $\mathbf{A}=(a_{ij})$, then the Hermitian conjugate is $\mathbf{A}^\dagger=(\mathbf{A}^\top)^*=(\mathbf{A}^*)^\top=(a^*_{ji})$\\
         Hermitian matrix: $\mathbf{A}^\dagger=\mathbf{A}$
     \item Trace: 
         For an $n\times n$ matrix $\mathbf{A}$, trace($\mathbf{A}$)=$\displaystyle\sum_{i=1}^n a_{ii}$\\
@@ -215,7 +215,7 @@
             \item Multiplying all the elements of any one row or column of $\mathbf{A}$ by $\lambda$ multiplies $\text{det}\mathbf{A}$ by $\lambda$
             \item Adding a multiple of row (column) on another row (column) leaves $\text{det}\mathbf{A}$ unchanged
             \item $\text{det}\mathbf{AB}=(\text{det}\mathbf{A})(\text{det}\mathbf{B})$
-            \item $\text{det}\mathbf{A}=\text{det}\mathbf{A}^T$
+            \item $\text{det}\mathbf{A}=\text{det}\mathbf{A}^\top$
         \end{itemize}
     \item Eigenvalues:
         \begin{itemize}[topsep=0pt]
@@ -229,7 +229,7 @@
             \item $\mathbf{A}$ can be diagonalised by setting $\mathbf{X}=\begin{pmatrix}
                     \mathbf{e}_1 & \mathbf{e}_2 & \dots & \mathbf{e}_n
                 \end{pmatrix}$, then \smallbreak
-                $\mathbf{A}'=\mathbf{X}^T\mathbf{AX}=
+                $\mathbf{A}'=\mathbf{X}^\top\mathbf{AX}=
                 \begin{pmatrix}
                     \lambda_1 & 0 & \dots & 0\\
                     0 & \lambda_2 & \dots & 0\\
